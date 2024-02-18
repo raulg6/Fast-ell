@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-reset.css">
+    <link rel="stylesheet" href="login-style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!--Logo and invisible Button for access to the Homepage-->
+        <div class="logo"><button class="logo-btn" onclick="document.location='index.html'">Fast$ell.</button></div>
+        <!--Navigation bar linked to every site to connect each other-->
+        <div class="navbar">
+            <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">Learn More</a><!--<i class="ri-arrow-down-s-line">--></i></li> <!--Arrow sign commented out beacause I didn't have enough time for so many pages-->
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--Container keeping both forms in one to be able to switch between both-->
+    <section class="container forms">
+        <!--login form-->
+        <div class="form login">
+            <!--div for the content in the form-->
+            <div class="form-content">
+                <!--Login title-->
+                <header class="login-txt">Login</header>
+                <form action="#">
+                    <!--input for email-->
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                    </div>
+                    <!--input for password-->
+                    <div class="field input-field">
+                        <input type="password" placeholder="Password" class="password">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+                    <!--password forgot link, not linked yet-->
+                    <div class="form-link">
+                        <a href="#" class="forgot-pass">Forgot password?</a>
+                    </div>
+                    <!--button to login-->
+                    <div class="field button-field">
+                        <button>Login</button>
+                    </div>
+                </form>
+                <!--don't have account link, not linked yet-->
+                <div class="form-link">
+                    <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                </div>
+            </div>
+            <!--line dividing top and button-->
+            <div class="line"></div>
+            <div class="media-options">
+            <!--media options, only google for now-->
+                <a href="#" class="field google">
+                    <img src="google.png" alt="" class="google-img">
+                    <span>Login with Google</span>
+                </a>
+            </div>
+        </div>
+        <!--Signup Form-->
+        <div class="form signup">
+            <!--div for the content in the form-->
+            <div class="form-content">
+                <!--Signup title-->
+                <header class="login-txt">Signup</header>
+                <form action="#">
+                    <!--input for email-->
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                    </div>
+                    <!--input for password-->
+                    <div class="field input-field">
+                        <input type="password" placeholder="Create password" class="password">
+                    </div>
+                    <!--input for password confirmation-->
+                    <div class="field input-field">
+                        <input type="password" placeholder="Confirm password" class="password">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+                    <!--button to signup-->
+                    <div class="field button-field">
+                        <button>Signup</button>
+                    </div>
+                </form>
+                <!--<already have account link, not linked yet-->
+                <div class="form-link">
+                    <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                </div>
+            </div>
+            <!--line dividing top and button-->
+            <div class="line"></div>
+            <!--media options, only google for now-->
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <img src="images/google.png" alt="" class="google-img">
+                    <span>Login with Google</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <div class="waves"></div><!--div for bottom waves picture -->
+    <script src="login-script.js"></script> <!--Script always below all, for the site to load first and then the script-->
+</body>
+</html>

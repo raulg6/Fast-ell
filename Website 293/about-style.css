@@ -1,0 +1,104 @@
+/*Main design properties applied to the whole page*/
+*{
+    background-color: rgb(252, 255, 243);
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+/*Font used in the whole body element*/
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*properties for the header (top part of the page wich contains navbar)*/
+header{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*properties for right logo positioning*/
+.logo{
+    margin-left: 35px;
+    font-size: 40px;
+    font-weight: 800;
+}
+/*invisible button wich contains the logo, leading to homepage when clicked*/
+.logo-btn{
+    background: transparent;
+    border-color: transparent;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    box-shadow: none;
+}
+/*properties for the navbar to float at the right side*/
+.navbar{
+    float: right;
+    display: flex;
+    margin-right: 120px;
+    align-items: center;
+    justify-content: center;
+}
+/*properties for single navbar components*/
+li{
+    float: left;
+    border: 12px;
+    margin: 30px;
+    font-size: 23px;
+}
+/*adjusts navbar components to not be blue and underlined*/
+a{
+    text-decoration: none;
+    color: black;
+}
+/*navbar components light up grey when clicked to clarify that it was clicked*/
+a:active {
+    color: grey;
+}
+/*navbar components are underlined when hovering over them*/
+a:hover{
+        text-decoration: underline;
+}
+/*grid creating left and right space for text and img while left is bigger for text to not be squashed */
+.main-grid{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "left right"
+    ;
+}
+/*grid property to keep it in the left part of grid*/
+.text{
+    grid-area: left;
+}
+/*surtitles question properties*/
+h2{
+    font-size: 30px;
+    margin-left: 35px;
+    margin-top: 50px;
+}
+/*text answer properties*/
+.answer{
+    padding-top: 20px;
+    margin-left: 35px;
+    color: gray;
+    margin-right: 15%;
+}
+/*5 star rating img on right part of grid*/
+img{
+    height: 330px;
+    width: 480px;
+    grid-area: right;
+    margin: -60px;
+    margin-top: 60px;
+}
+/*bottom waves picture*/
+.waves{
+    background-image: url("Bottom Waves.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 162px;
+    width: 100%;
+    position:absolute; bottom:0;
+}
